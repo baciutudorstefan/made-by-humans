@@ -1,0 +1,45 @@
+.grid__img{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 463px);
+    /* grid-template-areas: 
+    "img1 img1 img2 img2 img2"
+    "img1 img1 . img3 img3"; */
+    grid-gap: 32px 23px;
+    padding: 0px 140px;
+    margin-top: 163px;
+    overflow: hidden;
+  }
+
+  .grid__img_style{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .grid__img-img1{
+    background-image: url(../Images/hands.jpg);
+    background-position: center top;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-area: img1; */
+  }
+  .grid__img-img2{
+    background-image:url(../Images/man.PNG);
+    background-position: center top;
+    grid-column-start: 5;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* grid-area: img2; */
+  }
+  .grid__img-img3{
+    background-image: url(../Images/girl.jpg);
+    background-position: center top;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* grid-area: img3; */
+  }

@@ -1,0 +1,26 @@
+.component__align__right_offer{
+    display: grid;
+    grid-template-columns: 32.3% 67.7%;
+    padding: 96px 0px 0px 140px;
+
+}
+
+.component__align__right_content_table{
+    background: #f55951;
+    color: white;
+    grid-column-start: 2;
+    padding: 96px 64px;
+    line-height: 2.25;
+}
+
+
+.component__align__right_content_table_offer_list{
+    display: grid;
+    font-size: 32px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 49px;
+}
+
+.component__align__right_content_table_offer_list ul li{
+    list-style: none;
+}

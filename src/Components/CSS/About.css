@@ -1,0 +1,63 @@
+.component__align__center{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0px 32px;
+    padding: 0px 140px;
+    margin-top: 148px;
+    overflow: hidden;
+}
+
+.component__align__center_title{
+    color: #f55951;
+    font-size: 2.18vw;
+}
+
+.component__align__center_paragraphs{
+    display: grid;
+    grid-row-gap: 50px;
+}
+.component__align__center_paragraphs > p{
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 320px) {
+    .component__align__center{
+        margin-top: 90px;
+    }
+    .component__align__center_title{
+        color: #f55951;
+        font-size: 5.73vw;
+        text-align: center;
+    }
+    .component__align__center_paragraphs{
+        padding: 0px 1em;
+        font-size: 3.27vw;
+    }
+
+    #root > div > div.component__align__center > div > p:nth-child(n){
+        text-align: center;
+    }
+}
+
+
+
+/* CSS Anim */
+
+#root > div > div:nth-child(3) > div.component__align__center_paragraphs > div:nth-child(1){
+    animation-duration: 0.5s;
+    transition: ease-in;
+}
+
+#root > div > div:nth-child(3) > div.component__align__center_paragraphs > div:nth-child(2){
+    animation-duration: 0.8s;
+    transition: ease-in;
+
+}
+
+#root > div > div:nth-child(3) > div.component__align__center_paragraphs > div:nth-child(3){
+    animation-duration: 1s;
+    transition: ease-in;
+
+}

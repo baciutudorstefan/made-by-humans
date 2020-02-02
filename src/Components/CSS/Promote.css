@@ -1,0 +1,53 @@
+.component__align__right{
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    grid-template-rows: 885px;
+    grid-gap: 0px 32px;
+    padding: 0px 0px 0px 140px;
+    overflow: hidden;
+}
+
+.component__align__right_content_left{
+    align-self: center;
+    color: #361c32;
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 1.22;
+}
+
+.component__align__right_content_right{
+    background-image: url(../Images/wcap.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/* Media querry */
+
+@media screen and (max-width: 320px) {
+    .component__align__right {
+        grid-template-areas: 
+        "promote-title promote-title"
+        "promote-image promote-image"
+        !important;
+        grid-gap: 0px !important;
+        grid-template-rows: 90px 300px;
+        padding: 0px;
+    }
+
+    .component__align__right_content_left{
+        font-size: 4vw;
+        grid-area: promote-title;
+        padding: 0px 2em;
+        text-align: center;
+    }
+
+    .component__align__right_content_right{
+        grid-area: promote-image;
+        background-size: cover;
+        background-position: top;
+    }
+
+
+}

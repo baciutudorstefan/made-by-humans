@@ -1,0 +1,63 @@
+.contact__form__container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 167px 140px;
+    overflow: hidden;
+}
+
+#js-form{
+    display: grid;
+    grid-gap: 32px;
+}
+
+.contact__form__container h1{
+    color: #f55951;
+}
+
+#email, #message, #textMessage{
+    border: 1px solid #543b52;
+    font-size: 32px;
+    width: 100%;
+    padding: 32px;
+}
+
+#email, #message{
+    height: 120px;
+}
+
+#textMessage{
+    height: 360px;
+}
+
+#js-form > div:nth-child(4){
+    display: grid;
+}
+
+#formSubmit{
+    background-color: #f55951;
+    color: white;
+    font-size: 48px;
+    height: 120px;
+    width: 60%;
+    justify-self: end;
+}
+.error-msg{
+    color: #f55951;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    opacity: 0.65; 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:active,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus{
+    font-size: 32px !important;
+    padding: 32px;
+}
